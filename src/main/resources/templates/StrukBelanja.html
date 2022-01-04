@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Struk Belanja</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div align="center">STRUK BELANJA</div>
+        <hr>
+        <table border="1" align="center">
+            <tr>
+                <td>Nama sayur </td>
+                <td th:text="${name}"></td>
+            </tr>
+            
+            <tr>
+                <td>Harga Per-kg </td>
+                <td th:text="${price}"></td>
+            </tr>
+            
+            <tr>
+                <td>Jumlah (Kg) </td>
+                <td th:text="${kilo}"></td>
+            </tr>
+            
+            <tr>
+                <td>Harga Awal (Rupiah)</td>
+                <td th:text="${subtotal}"></td>
+            </tr>
+            
+            <tr>
+                <td>Diskon(%) </td>
+                <td th:text="${discount}"></td>
+            </tr>
+            
+            <tr>
+                <td>Diskon (Rupiah) </td>
+                <td th:text="${discountprice}"></td>
+            </tr>
+            
+            <tr>
+                <td>Total pembayaran (Rupiah)</td>
+                <td th:text="${grandtotal}"></td>
+            </tr>
+            
+            <tr>
+                <td>Kembalian (Rupiah)   </td>
+                <td th:text="${kembalian}"></td>
+            </tr>
+            <tr>
+                <td>Uang Cash   </td>
+                <td th:text="${upembeli}"></td>
+            </tr>
+            
+        </table>
+        <p align="center"><a href="http://localhost:8080/">Kembali</a></p>
+    </body>
+</html>
